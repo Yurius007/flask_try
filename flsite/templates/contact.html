@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" href="{{ url_for('static', filename='css/form_style/form_style.css')}}" rel="stylesheet" />
+    <link type="text/css" href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+</head>
+<body>
+    <!-- <form action="/handler" method="POST"> -->
+        <div class="form_div">
+    {% extends 'base.html' %}
+    {% block content %}
+    {{ super() }}
+    {% for cat, msg in get_flashed_messages(True) %}
+    <div class="flash_m {{cat}}"><label class="msg_text">{{msg}}</label></div>
+    {% endfor %}
+    <form action="/contact" method="post" class="form-contact">
+    <p><label>Имя: </label> <input type="text" name="username" value=""
+    required />
+    <p><label>Email: </label> <input type="text" name="email" value=""
+    required />
+    <p><label>Сообщение:</label>
+    <p><textarea name="message" rows=7 cols=40></textarea>
+    <p><input type="submit" value="Отправить" />
+    </form>
+    {% endblock %}
+    <input type="submit" value="Отправить">
+        </div>
+    </form>
+    
+    <style>
+
+    </style>
+
+</body>
+</html>

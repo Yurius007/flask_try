@@ -1,0 +1,149 @@
+h1 {
+    text-align: center;
+    font-size: 36px;
+}
+ul {
+    font-size: 24px;
+}
+/* a {
+    text-decoration: none;
+    color: rgb(56, 62, 122);
+}
+a:hover {
+    color: rgb(213, 196, 245);
+} */
+body {
+    background-image: url('backiee-102533.jpg');
+    margin: 0;
+}
+li::marker {
+    color:white;
+}
+.ulbox {
+    color: cornsilk;
+}
+.flash_m {
+    padding: 10px;
+}
+.flash_m.success {
+    border: 5px solid #236e43;
+    background: #2db668
+}
+.flash_m.error {
+    border: 5px solid #a12f12;
+    background: #be2904
+}
+.msg_text {
+    color: white;
+    font-family: Snell Roundhand, cursive;
+}
+ul.list-posts {
+    list-style: none;
+    margin: 0;
+    max-width: 600px;
+}
+ul.list-posts li {
+    margin: 20px 0 0 0;
+    border: 1px solid #eee;
+}
+ul.list-posts .title {
+    margin: 0;
+    padding: 5px;
+    background: #eee;
+}
+ul.list-posts .annonce {
+    margin: 0;
+    padding: 10px 5px 10px 5px;
+}
+
+/* =========================================== */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(37, 55, 94);
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .profile-ava {
+    width: 130px;
+    text-align: center;
+    overflow: hidden; 
+    background: #eee;
+    padding: 10px;
+}
+
+.profile-ava img {max-width: 150px; height: auto;}
+
+.profile-load {
+    margin-top: 10px;
+    overflow: hidden;
+    max-width: 150px;
+}
+.profile-load input[type=submit], input[type=file] {
+    width: 100%;
+    font-size: 18px;
+}
+.profile-load p {
+    padding: 0;
+    margin: 5px 0 0 0;
+}
+
+.profile-panel {padding: 0 0 0 10px;}
+ul.profile-info {
+    list-style: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+    color: #7E652F;
+}
+ul.profile-info li {margin-top: 10px;}
+
+.form-contact .invalid {
+    display: inline-block;
+    background: #FF9898;
+}
+.form-contact .invalid-feedback {
+    color: #CC0000;
+}
